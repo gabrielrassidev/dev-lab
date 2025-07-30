@@ -1,0 +1,1009 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Gabriel Rassi Portfolio</title>
+    <meta name="description" content="Detailed case studies showcasing Gabriel Rassi's product marketing and growth strategies with proven R$83M+ revenue results.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #ffffff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #111827;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #6b7280;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #2563eb;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            border-radius: 1px;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #374151;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Page Header */
+        .page-header {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #111827;
+        }
+
+        .page-header p {
+            font-size: 1.25rem;
+            color: #6b7280;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Case Studies Section */
+        .case-studies-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: 20px;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 3rem;
+        }
+
+        .case-card:last-child {
+            border-bottom: none;
+        }
+
+        .case-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-card h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #111827;
+            line-height: 1.2;
+        }
+
+        .case-description {
+            font-size: 1.25rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .case-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        }
+
+        .metric-number {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #2563eb;
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-label {
+            font-size: 0.875rem;
+            color: #64748b;
+            font-weight: 600;
+        }
+
+        .case-highlights {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #2563eb;
+        }
+
+        .case-highlights h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .case-highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .case-highlights li {
+            color: #4b5563;
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .case-highlights li::before {
+            content: "→";
+            color: #2563eb;
+            font-weight: 600;
+            position: absolute;
+            left: 0;
+        }
+
+        .case-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(37, 99, 235, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #2563eb;
+            border: 2px solid #2563eb;
+        }
+
+        .btn-outline:hover {
+            background: #2563eb;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-large {
+            padding: 1.125rem 2rem;
+            font-size: 1.05rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .cta-content p {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer - Fixed Design */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            align-items: start;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-left p {
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #334155;
+            color: #94a3b8;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.125rem;
+        }
+
+        .footer-social a:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-column h4 {
+            color: #f1f5f9;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.875rem;
+        }
+
+        .footer-column a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-column a:hover {
+            color: #f1f5f9;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+        }
+
+        .footer-bottom p {
+            color: #64748b;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-float i {
+            font-size: 1.25rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+            50% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            }
+            100% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: white;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 2rem;
+                transition: left 0.3s ease;
+                border-top: 1px solid #e5e7eb;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(6px, 6px);
+            }
+
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+
+            .page-header {
+                padding: 100px 0 60px;
+            }
+
+            .page-header h1 {
+                font-size: 2.25rem;
+            }
+
+            .case-card h2 {
+                font-size: 1.75rem;
+            }
+
+            .case-metrics {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .case-actions {
+                flex-direction: column;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                padding: 0.875rem 1.25rem;
+            }
+
+            .whatsapp-text {
+                display: none;
+            }
+
+            .footer-links {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">GR</span>
+                Gabriel Rassi
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="case-studies.html" class="nav-link active">Case Studies</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Case Studies</h1>
+            <p>Real marketing campaigns, real results. Here's how strategic thinking and technical execution drove measurable growth for brands across different industries.</p>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies-section">
+        <div class="container">
+            <div class="cases-grid">
+
+                <!-- Case Study 1: AUVP Capital -->
+                <article class="case-card">
+                    <div class="case-number">Case Study 01</div>
+                    <h2>AUVP Capital: Strategic Rebrand & Growth</h2>
+                    <p class="case-description">Led complete brand repositioning from infoproducts to investment consulting. Developed messaging architecture and multi-channel campaigns resulting in record revenue growth while maintaining customer trust during a major business model transformation.</p>
+
+                    <div class="case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-number">R$81M</div>
+                            <div class="metric-label">Annual Revenue</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">60%</div>
+                            <div class="metric-label">YoY Growth</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">1000+</div>
+                            <div class="metric-label">Monthly Enrollments</div>
+                        </div>
+                    </div>
+
+                    <div class="case-highlights">
+                        <h3><i class="fas fa-star"></i> Key Achievements</h3>
+                        <ul>
+                            <li>Developed new messaging architecture for investment consulting positioning</li>
+                            <li>Managed multi-channel campaigns across YouTube, Meta Ads, and OOH advertising</li>
+                            <li>Implemented advanced Salesforce CRM workflows for lead optimization</li>
+                            <li>Maintained revenue growth during complete business model transition</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-actions">
+                        <a href="case-study-auvp.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Full Case Study
+                        </a>
+                        <a href="https://www.auvp.com.br" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Live Project
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Case Study 2: Education Platform -->
+                <article class="case-card">
+                    <div class="case-number">Case Study 02</div>
+                    <h2>December 2024: From Impossible to Record-Breaking</h2>
+                    <p class="case-description">Turned the historically worst month (40% revenue drop) into best month ever with just 3 weeks planning. Superpoder exploded 733% growth (R$300K→R$2.5M) and AUVP School achieved 57% growth (R$3.7M→R$5.8M) through simultaneous launch strategy.
+</p>
+
+                    <div class="case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-number">R$8.3M</div>
+                            <div class="metric-label">Total Revenue</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">733%</div>
+                            <div class="metric-label">Growth in one product</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">160+</div>
+                            <div class="metric-label">Creatives Produced</div>
+                        </div>
+                    </div>
+
+                    <div class="case-highlights">
+                        <h3><i class="fas fa-star"></i> Key Achievements</h3>
+                        <ul>
+                            <li>Built and optimized complete acquisition funnels from awareness to enrollment</li>
+                            <li>Developed high-performing ad creatives with focus on conversion optimization</li>
+                            <li>Implemented advanced testing frameworks for continuous improvement</li>
+                            <li>Achieved consistent 4x ROAS on cold traffic campaigns</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-actions">
+                        <a href="case-study-december.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Full Case Study
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Case Study 3: YouTube Channel -->
+                <article class="case-card">
+                    <div class="case-number">Case Study 03</div>
+                    <h2>The most influential finances YouTube channel in South America</h2>
+                    <p class="case-description">Created content strategy and wrote high-retention scripts for Investidor Sardinha, building it into South America's most influential finance YouTube channel with millions of engaged subscribers and industry authority.</p>
+
+                    <div class="case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-number">1.4M</div>
+                            <div class="metric-label">Subscribers</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">#1</div>
+                            <div class="metric-label">Latin America</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">130k+</div>
+                            <div class="metric-label">Views per video</div>
+                        </div>
+                    </div>
+
+                    <div class="case-highlights">
+                        <h3><i class="fas fa-star"></i> Key Achievements</h3>
+                        <ul>
+                            <li>Developed comprehensive content strategy for finance education</li>
+                            <li>Wrote high-retention YouTube scripts aligned with user acquisition goals</li>
+                            <li>Built authority positioning in competitive finance content market</li>
+                            <li>Created viral content series that established thought leadership</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-actions">
+                        <a href="case-study-youtube.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Full Case Study
+                        </a>
+                        <a href="https://www.youtube.com/investidorsardinha" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-youtube"></i>
+                            View Channel
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Case Study 4: Photography Launch -->
+                <article class="case-card">
+                    <div class="case-number">Case Study 04</div>
+                    <h2>Photography niche launch that made R$300k in 3 minutes</h2>
+                    <p class="case-description">Designed complete launch strategy for photography course creator. Built challenge sequence, sales copy, and conversion flows that generated R$300k in revenue within 3 minutes of cart opening through strategic urgency and audience preparation.</p>
+
+                    <div class="case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-number">R$300k</div>
+                            <div class="metric-label">Revenue</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">3</div>
+                            <div class="metric-label">Minutes</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">15%</div>
+                            <div class="metric-label">Conversion Rate</div>
+                        </div>
+                    </div>
+
+                    <div class="case-highlights">
+                        <h3><i class="fas fa-star"></i> Key Achievements</h3>
+                        <ul>
+                            <li>Designed 3-day challenge sequence with progressive value delivery</li>
+                            <li>Created urgency-driven sales copy and conversion sequences</li>
+                            <li>Built audience anticipation through strategic content marketing</li>
+                            <li>Achieved record-breaking 3-minute revenue generation</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-actions">
+                        <a href="case-study-photography.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Full Case Study
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Case Study 5: Product Launch -->
+                <article class="case-card">
+                    <div class="case-number">Case Study 05</div>
+                    <h2>Designed new product and earned R$373k in 3 weeks</h2>
+                    <p class="case-description">From concept to execution: designed new business product, created go-to-market strategy, and launched complete campaign that generated R$373k revenue in just 3 weeks through strategic product development and targeted marketing.</p>
+
+                    <div class="case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-number">R$373k</div>
+                            <div class="metric-label">Revenue</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">3</div>
+                            <div class="metric-label">Weeks</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-number">100%</div>
+                            <div class="metric-label">New Product</div>
+                        </div>
+                    </div>
+
+                    <div class="case-highlights">
+                        <h3><i class="fas fa-star"></i> Key Achievements</h3>
+                        <ul>
+                            <li>Conceptualized and developed new business product from scratch</li>
+                            <li>Created comprehensive go-to-market strategy and execution plan</li>
+                            <li>Built complete marketing campaign with multi-channel approach</li>
+                            <li>Achieved rapid market validation and revenue generation</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-actions">
+                        <a href="case-study-auvp-negocios.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Full Case Study
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in Similar Results?</h2>
+                <p>These case studies represent real challenges solved with strategic thinking and technical execution. Let's discuss how this approach can accelerate your product's growth.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5562999501727?text=Hello!%20I%20want%20to%20discuss%20a%20product%20marketing%20opportunity.%20Are%20you%20available%3F"
+                       class="btn btn-primary btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Discuss Your Project
+                    </a>
+                    <a href="contact.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">GR</span>
+                        Gabriel Rassi
+                    </div>
+                    <p>Product Marketing Manager with Full-Stack Skills</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/gabrielrassi" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/gabrielrassidev" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/ogabrielrassi" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Contact</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5562999501727" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:gabrielrassi01@gmail.com">Email</a></li>
+                            <li><a href="https://linkedin.com/in/gabrielrassi" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/gabrielrassidev" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gabriel Rassi. All rights reserved.</p>
+                <p>Built with strategy. Designed for results.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a class="whatsapp-float"
+       href="https://wa.me/5562999501727?text=Hello!%20I%20want%20to%20discuss%20a%20product%20marketing%20opportunity.%20Are%20you%20available%3F"
+       target="_blank"
+       rel="noopener"
+       aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Let's Talk</span>
+    </a>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
