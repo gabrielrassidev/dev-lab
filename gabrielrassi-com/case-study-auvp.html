@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUVP Capital: Strategic Rebrand & Growth - Gabriel Rassi</title>
+    <meta name="description" content="How Gabriel Rassi led AUVP Capital's strategic rebrand from infoproducts to investment consulting, achieving R$83M in annual revenue with 60% YoY growth.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Case Study Page Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #ffffff;
+        }
+
+        .case-study-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Header */
+        .case-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .case-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .case-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #0f172a;
+            line-height: 1.1;
+        }
+
+        .case-subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .case-metrics-header {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .metric-box {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        }
+
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2563eb;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.95rem;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Navigation */
+        .case-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding: 1rem 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            gap: 0.75rem;
+            color: #1d4ed8;
+        }
+
+        .print-btn {
+            background: #f3f4f6;
+            color: #374151;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .print-btn:hover {
+            background: #e5e7eb;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.125rem;
+        }
+
+        .content-text {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .content-list li {
+            background: #f8fafc;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .content-list strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        /* Brand Independence Strategy */
+        .independence-strategy {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .independence-strategy::before {
+            content: '🎭';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            opacity: 0.7;
+        }
+
+        .independence-title {
+            color: #d97706;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Team Diversification */
+        .team-diversification {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 2px solid #0ea5e9;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .diversification-title {
+            color: #0ea5e9;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .strategy-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #93c5fd;
+            text-align: center;
+        }
+
+        .strategy-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            margin: 0 auto 1rem;
+        }
+
+        .strategy-name {
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .strategy-description {
+            font-size: 0.875rem;
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        /* Results Grid */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .result-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .result-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .result-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #10b981;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-description {
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #2563eb, #1d4ed8);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.875rem;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            background: #2563eb;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #e2e8f0;
+        }
+
+        .timeline-date {
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-description {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Tools Used */
+        .tools-used {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 2rem 0;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .tool-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #cbd5e1;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 500;
+        }
+
+        .tool-icon {
+            color: #2563eb;
+            font-size: 1.25rem;
+        }
+
+        /* Footer */
+        .case-footer {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            background: #2563eb;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .contact-btn.secondary {
+            background: transparent;
+            border: 2px solid #2563eb;
+        }
+
+        .contact-btn.secondary:hover {
+            background: #2563eb;
+        }
+
+        /* Print Styles */
+        @media print {
+            .case-nav, .case-footer { display: none; }
+            .case-study-container { padding: 1rem; }
+            .case-title { font-size: 2rem; }
+            .content-section { page-break-inside: avoid; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .case-study-container {
+                padding: 2rem 1rem;
+            }
+
+            .case-title {
+                font-size: 2rem;
+            }
+
+            .case-metrics-header {
+                grid-template-columns: 1fr;
+            }
+
+            .strategy-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .timeline {
+                padding-left: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="case-study-container">
+        <!-- Navigation -->
+        <div class="case-nav">
+            <a href="case-studies.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Case Studies
+            </a>
+            <button class="print-btn" onclick="window.print()">
+                <i class="fas fa-print"></i>
+                Print PDF
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="case-header">
+            <div class="case-number">Case Study 01</div>
+            <h1 class="case-title">AUVP Capital: Strategic Rebrand & Growth</h1>
+            <p class="case-subtitle">Leading complete brand transformation from infoproducts to investment consulting while achieving record revenue growth and maintaining customer trust.</p>
+
+            <div class="case-metrics-header">
+                <div class="metric-box">
+                    <div class="metric-number">R$81M</div>
+                    <div class="metric-label">Annual Revenue</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number">60%</div>
+                    <div class="metric-label">YoY Growth</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number">1000+</div>
+                    <div class="metric-label">Monthly Enrollments</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Challenge Section -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <div class="section-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                The Challenge
+            </h2>
+            <p class="content-text">
+                AUVP Capital faced a critical transition: evolving from a successful infoproduct company to a sophisticated investment consulting and private banking firm. This wasn't just a rebrand—it was a complete business model transformation that required maintaining existing revenue streams while building credibility in a highly regulated financial services market.
+            </p>
+            <p class="content-text">
+                The challenge was multifaceted: how do you maintain customer trust during a major pivot? How do you reposition a brand without losing existing audience? And most critically, how do you achieve this transformation while not only maintaining but actually growing revenue by 60% year-over-year?
+            </p>
+            <ul class="content-list">
+                <li><strong>Brand Identity Crisis:</strong> Needed to shift from education-focused messaging to investment authority positioning</li>
+                <li><strong>Audience Retention:</strong> Maintain existing customer base while attracting institutional clients</li>
+                <li><strong>Regulatory Compliance:</strong> Navigate financial services regulations while scaling marketing efforts</li>
+                <li><strong>Revenue Continuity:</strong> Ensure no disruption to cash flow during transition period</li>
+                <li><strong>CEO Dependency:</strong> Reduce brand reliance on single personality while maintaining authority and trust</li>
+            </ul>
+        </section>
+
+        <!-- Strategy Section -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <div class="section-icon">
+                    <i class="fas fa-chess"></i>
+                </div>
+                Strategy & Execution
+            </h2>
+            <p class="content-text">
+                My approach centered on a phased rebrand strategy that prioritized messaging architecture, multi-channel campaign coordination, and data-driven optimization. Rather than an overnight transformation, we implemented a systematic approach that built authority while maintaining existing revenue streams.
+            </p>
+
+            <div class="independence-strategy">
+                <div class="independence-title">
+                    <i class="fas fa-users"></i>
+                    Brand Independence Strategy
+                </div>
+                <p class="content-text">
+                    A critical component of the rebrand was reducing AUVP's dependency on CEO Raul Sena as the sole face of the company. While he remained the primary authority figure through YouTube content and AUVP School courses, we systematically diversified the brand's human capital to create sustainable, scalable authority.
+                </p>
+            </div>
+
+            <div class="team-diversification">
+                <div class="diversification-title">
+                    <i class="fas fa-network-wired"></i>
+                    Multi-Face Brand Development
+                </div>
+                <p class="content-text">
+                    We transformed willing team members into brand ambassadors and positioned investment consultants as trusted authorities, creating a distributed trust model that reduced single-person dependency risk.
+                </p>
+
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <div class="strategy-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="strategy-name">Employee Creatives</div>
+                        <div class="strategy-description">
+                            Recruited willing employees to appear in creative content for AUVP School and AUVP Consultoria, diversifying face representation
+                        </div>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-icon">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                        <div class="strategy-name">Consultant Positioning</div>
+                        <div class="strategy-description">
+                            Launched weekly live sessions featuring investment consultants discussing finance and market topics to build individual authority
+                        </div>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="strategy-name">Content Repurposing</div>
+                        <div class="strategy-description">
+                            Transformed daily YouTube video clips into pitch content and creative assets for multi-platform campaigns
+                        </div>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="strategy-name">Trust Distribution</div>
+                        <div class="strategy-description">
+                            Built audience confidence in consultants handling million-dollar guidance through systematic authority building
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Phase 1: Q2 2024</div>
+                    <div class="timeline-title">Messaging Architecture Development</div>
+                    <div class="timeline-description">Created new brand positioning framework, developed investment-focused content pillars, and established thought leadership narrative</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Phase 2: Q3 2024</div>
+                    <div class="timeline-title">Multi-Channel Campaign Launch</div>
+                    <div class="timeline-description">Rolled out coordinated campaigns across YouTube, Meta Ads, influencer partnerships, and OOH advertising with unified messaging</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Phase 3: Q4 2024</div>
+                    <div class="timeline-title">Team Diversification & Authority Building</div>
+                    <div class="timeline-description">Implemented employee creative strategy, launched consultant positioning program, and established content repurposing workflows for sustainable brand growth</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Phase 4: Q1 2025</div>
+                    <div class="timeline-title">Authority Consolidation</div>
+                    <div class="timeline-description">Established AUVP as leading investment authority through high-retention YouTube content and thought leadership initiatives while maintaining distributed brand presence</div>
+                </div>
+            </div>
+
+            <ul class="content-list">
+                <li><strong>Brand Positioning:</strong> Developed comprehensive messaging framework positioning AUVP as premium investment consultancy</li>
+                <li><strong>Content Strategy:</strong> Created high-retention YouTube scripts that built authority while driving user acquisition</li>
+                <li><strong>Paid Media Management:</strong> Managed complex Meta Ads campaigns with sophisticated audience segmentation</li>
+                <li><strong>CRM Implementation:</strong> Built advanced Salesforce workflows to track customer journey from education to investment</li>
+                <li><strong>Influencer Partnerships:</strong> Coordinated campaigns with financial influencers to build credibility and reach</li>
+                <li><strong>OOH Integration:</strong> Executed outdoor advertising campaigns that reinforced digital messaging</li>
+                <li><strong>Team Brand Development:</strong> Systematically positioned employees and consultants as trusted brand representatives</li>
+                <li><strong>Content Repurposing System:</strong> Established workflows to transform YouTube content into multi-platform creative assets</li>
+            </ul>
+        </section>
+
+        <!-- Tools Used -->
+        <div class="tools-used">
+            <h3 style="margin-bottom: 1rem; color: #0f172a; font-weight: 700;">Tools & Platforms Used</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fas fa-users tool-icon"></i>
+                    Salesforce CRM
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-facebook tool-icon"></i>
+                    Meta Ads Manager
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-youtube tool-icon"></i>
+                    YouTube Studio
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-chart-line tool-icon"></i>
+                    Google Analytics
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-envelope tool-icon"></i>
+                    Email Marketing
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-bullhorn tool-icon"></i>
+                    OOH Campaigns
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <div class="section-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                Results & Impact
+            </h2>
+            <p class="content-text">
+                The rebrand exceeded all expectations, not only maintaining existing revenue streams but achieving significant growth across all key metrics. The systematic approach allowed AUVP to successfully transition into the investment space while building a stronger, more sustainable business model with reduced single-person dependency.
+            </p>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-value">R$81M</div>
+                    <div class="result-description">Total annual revenue achieved in 2024</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value">60%</div>
+                    <div class="result-description">Year-over-year revenue growth</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value">R$6M</div>
+                    <div class="result-description">Monthly online school revenue (Q1 2025)</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value">1000+</div>
+                    <div class="result-description">Monthly student enrollments maintained</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value">15+</div>
+                    <div class="result-description">Team members positioned as brand ambassadors</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value">300%</div>
+                    <div class="result-description">Increase in qualified investment leads</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Learnings -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <div class="section-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                Key Learnings & Insights
+            </h2>
+            <ul class="content-list">
+                <li><strong>Phased Approach Works:</strong> Gradual brand transitions maintain customer trust while building new market credibility</li>
+                <li><strong>Content is Authority:</strong> High-quality, educational content was crucial for establishing investment expertise</li>
+                <li><strong>Data-Driven Decisions:</strong> Salesforce CRM data guided every major strategic decision throughout the transition</li>
+                <li><strong>Multi-Channel Synergy:</strong> Coordinated campaigns across all channels amplified message consistency and reach</li>
+                <li><strong>Customer Journey Mapping:</strong> Understanding the path from education to investment was key to conversion optimization</li>
+                <li><strong>Brand Independence Strategy:</strong> Systematically reducing single-person dependency creates more resilient and scalable organizations</li>
+                <li><strong>Team as Brand Asset:</strong> Willing employees can become powerful brand ambassadors when properly positioned and supported</li>
+                <li><strong>Content Multiplication:</strong> Strategic repurposing of existing content creates exponential value across multiple channels</li>
+            </ul>
+        </section>
+
+        <!-- Footer CTA -->
+        <footer class="case-footer">
+            <h3 class="footer-title">Interested in Similar Results for Your Brand?</h3>
+            <p class="footer-text">
+                This case study represents strategic thinking combined with hands-on execution. Let's discuss how I can help accelerate your brand's growth and transformation.
+            </p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/5562999501727?text=Hello!%20I%20saw%20your%20AUVP%20Capital%20case%20study%20and%20want%20to%20discuss%20a%20similar%20project." class="contact-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Discuss Your Project
+                </a>
+                <a href="case-studies.html" class="contact-btn secondary">
+                    <i class="fas fa-arrow-left"></i>
+                    View More Cases
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
