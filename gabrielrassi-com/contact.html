@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gabriel Rassi Portfolio</title>
+    <meta name="description" content="Get in touch with Gabriel Rassi for product marketing opportunities, growth strategy consulting, or technical development projects.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">GR</span>
+                Gabriel Rassi
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="case-studies.html" class="nav-link">Case Studies</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Let's Connect</h1>
+                <p>Ready to accelerate your product's growth? Let's discuss how my unique combination of marketing strategy and technical skills can help your team succeed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-hero">
+                <h2>Multiple Ways to Reach Me</h2>
+                <p>Whether you prefer instant messaging, email, or a quick call, I'm here to discuss your product marketing needs and explore how we can work together.</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Methods -->
+                <div class="contact-info">
+                    <h3>Preferred Contact Methods</h3>
+                    <div class="contact-methods">
+                        <a href="https://wa.me/5562999501727?text=Hello!%20I%20want%20to%20discuss%20a%20product%20marketing%20opportunity.%20Are%20you%20available%3F"
+                           class="contact-method" target="_blank" rel="noopener">
+                            <div class="contact-method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-method-content">
+                                <h4>WhatsApp (Fastest Response)</h4>
+                                <p>+55 62 99950-1727 • Usually respond within 1-2 hours</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:gabrielrassi01@gmail.com" class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-content">
+                                <h4>Email</h4>
+                                <p>gabrielrassi01@gmail.com • Response within 24 hours</p>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/gabrielrassi" class="contact-method" target="_blank" rel="noopener">
+                            <div class="contact-method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-method-content">
+                                <h4>LinkedIn</h4>
+                                <p>Professional networking and career opportunities</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/gabrielrassidev" class="contact-method" target="_blank" rel="noopener">
+                            <div class="contact-method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-method-content">
+                                <h4>GitHub</h4>
+                                <p>Technical projects and code collaboration</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="availability-info">
+                        <h4><i class="fas fa-clock"></i> Availability</h4>
+                        <p>Mon-Fri: 9 AM - 6 PM (GMT-3)<br>
+                        Weekend: Limited availability for urgent matters</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" action="https://formspree.io/f/gabrielrassi01@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="_replyto" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="_subject" required style="width: 100%; padding: 0.875rem 1rem; border: 1px solid #d1d5db; border-radius: 8px; font-size: 0.95rem;">
+                                <option value="">Select a topic</option>
+                                <option value="Product Marketing Role Opportunity">Product Marketing Role</option>
+                                <option value="Growth Marketing Position Interest">Growth Marketing Position</option>
+                                <option value="Marketing Consulting Inquiry">Marketing Consulting</option>
+                                <option value="Technical Collaboration Project">Technical Collaboration</option>
+                                <option value="Freelance Project Discussion">Freelance Project</option>
+                                <option value="General Inquiry">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project, role, or how I can help..." required></textarea>
+                        </div>
+
+                        <input type="hidden" name="_next" value="https://gabrielrassi.dev/contact.html?success=true">
+                        <input type="hidden" name="_cc" value="gabrielrassi01@gmail.com">
+
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: #fef3c7; border-radius: 8px; border: 1px solid #f59e0b;">
+                        <p style="color: #92400e; font-size: 0.875rem; margin: 0;">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>Note:</strong> This form is for demonstration purposes. For fastest response, please use WhatsApp or email directly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 80px 0; background: #f8fafc;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; color: #111827;">Frequently Asked Questions</h2>
+                <p style="font-size: 1.125rem; color: #6b7280; max-width: 600px; margin: 0 auto;">Quick answers to common questions about working together</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: grid; gap: 1.5rem;">
+                    <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid #e5e7eb;">
+                        <h3 style="color: #111827; font-weight: 600; margin-bottom: 0.75rem;">What type of roles am I looking for?</h3>
+                        <p style="color: #4b5563; line-height: 1.6; margin: 0;">I'm interested in Product Marketing Manager positions, Growth Marketing roles, or any position where I can combine strategic marketing with technical implementation. Open to both mid-level and senior positions at SaaS/tech companies.</p>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid #e5e7eb;">
+                        <h3 style="color: #111827; font-weight: 600; margin-bottom: 0.75rem;">Do I work with freelance projects?</h3>
+                        <p style="color: #4b5563; line-height: 1.6; margin: 0;">Currently focusing on full-time opportunities, but I'm open to discussing strategic consulting projects or technical collaborations that align with my expertise in product marketing and growth strategy.</p>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid #e5e7eb;">
+                        <h3 style="color: #111827; font-weight: 600; margin-bottom: 0.75rem;">What makes me different from other marketers?</h3>
+                        <p style="color: #4b5563; line-height: 1.6; margin: 0;">I combine strategic marketing expertise with hands-on technical skills. I can not only plan and execute marketing campaigns but also build the technical solutions, analyze data with custom scripts, and communicate effectively with engineering teams.</p>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid #e5e7eb;">
+                        <h3 style="color: #111827; font-weight: 600; margin-bottom: 0.75rem;">What's my availability for new opportunities?</h3>
+                        <p style="color: #4b5563; line-height: 1.6; margin: 0;">I'm actively seeking new opportunities and can start within 2-4 weeks. Currently available for interviews and discussions about potential roles or projects.</p>
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid #e5e7eb;">
+                        <h3 style="color: #111827; font-weight: 600; margin-bottom: 0.75rem;">Do I work remotely?</h3>
+                        <p style="color: #4b5563; line-height: 1.6; margin: 0;">Yes, I'm experienced with remote work and have successfully managed campaigns and projects across different time zones. I'm open to remote, hybrid, or on-site positions depending on the opportunity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Accelerate Your Growth?</h2>
+                <p>Let's discuss how my unique combination of marketing strategy and technical skills can help drive your product's success. I'm excited to explore opportunities where I can make a real impact.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5562999501727?text=Hello!%20I%20want%20to%20discuss%20a%20product%20marketing%20opportunity.%20Are%20you%20available%3F"
+                       class="btn btn-primary btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Start Conversation
+                    </a>
+                    <a href="case-studies.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-chart-line"></i>
+                        View My Results
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">GR</span>
+                        Gabriel Rassi
+                    </div>
+                    <p>Product Marketing Manager with Full-Stack Skills</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/gabrielrassi" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/gabrielrassidev" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/ogabrielrassi" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Contact</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5562999501727" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:gabrielrassi01@gmail.com">Email</a></li>
+                            <li><a href="https://linkedin.com/in/gabrielrassi" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/gabrielrassidev" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gabriel Rassi. All rights reserved.</p>
+                <p>Built with strategy. Designed for results.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a class="whatsapp-float"
+       href="https://wa.me/5562999501727?text=Hello!%20I%20want%20to%20discuss%20a%20product%20marketing%20opportunity.%20Are%20you%20available%3F"
+       target="_blank"
+       rel="noopener"
+       aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Let's Talk</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling (Updated)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+
+            // Validate form
+            if (validateForm(this)) {
+                const submitBtn = this.querySelector('.form-submit');
+                const originalText = submitBtn.innerHTML;
+
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+
+                // Submit to Formspree (you'll need to set this up)
+                fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        alert('Message sent successfully! I\'ll get back to you within 24 hours.');
+                        this.reset();
+                    } else {
+                        alert('There was an issue sending your message. Please try WhatsApp or email directly.');
+                    }
+                }).catch(error => {
+                    alert('For fastest response, please contact me via WhatsApp: +55 62 99950-1727');
+                }).finally(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+            }
+        });
+    </script>
+</body>
+</html>
